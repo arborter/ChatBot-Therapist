@@ -1,0 +1,8 @@
+{"intents": [
+    {"tag": "greetings. to use me you must be specific. you must start off by telling me what you feel right now. what do you feel in this moment?",
+     "patterns": ["good", "bad", "sad", "happy", "negative", "angry", "mad", "melancholy", "sadness"],
+     "responses": ["Hello!", "Good to see you again!", "Hi there, how can I help?", "Hello! I'm almost human. How may I help you?", "Hey there!"],
+     "context_set": ""
+    }
+]
+}
