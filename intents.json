@@ -1,7 +1,12 @@
 {"intents": [
-    {"tag": "greetings. to use me you must be specific. you must start off by telling me what you feel right now. what do you feel in this moment?",
-     "patterns": ["good", "bad", "sad", "happy", "negative", "angry", "mad", "melancholy", "sadness"],
-     "responses": ["Hello!", "Good to see you again!", "Hi there, how can I help?", "Hello! I'm almost human. How may I help you?", "Hey there!"],
+    {"tag": "greetings",
+     "patterns": ["hi", "hey", "how are you?", "is anyone there?", "hello"],
+     "responses": ["hello. how do you feel today in one word? please be specific"],
+     "context_set": "feel"
+    },
+    {"tag": "feel",
+     "patterns": ["sad","happy","mad","melancholic","angry","fulfilled","suicidal","bored","unhappy","unsexy","content","gleeful","hateful","rabbid","forlorn","maudlin","belchy","gassy","bitchy","unloved","loved","lawless"],
+     "responses": ["Tell me a little more."],
      "context_set": ""
     }
 ]
