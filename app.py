@@ -65,3 +65,15 @@ output = np.array(output)
 #Saving data to disk
 with open("data.pickle","wb") as f:
 	pickle.dump((words, labels, training, output),f)
+
+tf.reset_default_graph()
+
+net = tflearn.input_data(shape = [None, len(training[0])])
+net = tflearn.fully_connected(net,8)
+net = tflearn.fully_connected(net,8)
+net = tflearn.fully_connected(net,len(output[0]), activation = "softmax")
+net = tflearn.regression(net)
+
+model = tflearn.DNN(net)
+model.fit(training, output, n_epoch = 200, batch_size = 8, show_metric = True)
+model.save("model.tflearn")
