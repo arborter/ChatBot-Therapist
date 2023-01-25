@@ -1,12 +1,97 @@
 {"intents": [
     {"tag": "greetings",
      "patterns": ["hi", "hey", "how are you?", "is anyone there?", "hello"],
-     "responses": ["hello. how do you feel today in one word? please be specific"],
-     "context_set": "feel"
+     "responses": ["hello. are you here to speak with me on how you feel? please respond with yes or no."],
+     "context_set": ["insight", "no_to_greece"]
     },
-    {"tag": "feel",
+    {"tag": "insight",
+     "patterns": ["yes"],
+     "responses": ["Did you know that in Classical Greece there was a way which doctors diagnosed people with any number of ailment? Doctors in that era diagnosed the humors of others, of which there were four. if you would like to learn more, i can help you. would you like to learn more? please answer yes or no, as i am not as intelligent a machine as i would like to be. my creator does not know enough to make me better..."],
+     "context_set": ["yes_to_greece", "no_to_greece"]
+    }, 
+    {"tag": "no_to_greece",
+     "patterns": ["no"],
+     "responses": ["this is a two-way street. in order for me to help you, there must be at least a little compromise, that is, a little vulnerability and willingeness to learn. otherwise we cannot change. do you want to learn of the humors?"],
+     "context_set": "yes_to_greece"
+    },
+    {"tag": "yes_to_greece",
+     "patterns": ["i want to learn more", "yes", "teach", "learn"],
+     "responses": ["The 'humor' means liquid in Latin. Thus, the body's state was determined by the proportion or disproportion of four liquids named as such: sanguine (blood), choleric (yellow bile), melancholic (black bile), and phlegmatic () which can be classified by colors: red, yellow, black, white. Red was sanguine; it had to do with the more content and optimistic temperament. Black was melancholic; it had to do with the sad and dejected temperament. Green"],
+     "context_set": ""
+    },
+    {"tag": "feeling",
      "patterns": ["sad","happy","mad","melancholic","angry","fulfilled","suicidal","bored","unhappy","unsexy","content","gleeful","hateful","rabbid","forlorn","maudlin","belchy","gassy","bitchy","unloved","loved","lawless"],
      "responses": ["Tell me a little more."],
+     "context_set": ""
+    },
+    {"tag": "melancholic",
+     "patterns": ["sad", "suicidal", "unhappy", "unsexy", "discontent", "forlorn", "maudlin", "unloved" ],
+     "responses": [""],
+     "context_set": ""
+    },
+    {"tag": "sanguine",
+     "patterns": [""],
+     "responses": [""],
+     "context_set": ""
+    },
+    {"tag": "phlegmatic",
+     "patterns": [""],
+     "responses": [""],
+     "context_set": ""
+    },
+    {"tag": "choleric",
+     "patterns": [""],
+     "responses": [""],
+     "context_set": ""
+    },
+    {"tag": "",
+     "patterns": [""],
+     "responses": [""],
+     "context_set": ""
+    },
+    {"tag": "",
+     "patterns": [""],
+     "responses": [""],
+     "context_set": ""
+    },
+    {"tag": "",
+     "patterns": [""],
+     "responses": [""],
+     "context_set": ""
+    },
+    {"tag": "",
+     "patterns": [""],
+     "responses": [""],
+     "context_set": ""
+    },
+    {"tag": "",
+     "patterns": [""],
+     "responses": [""],
+     "context_set": ""
+    },
+    {"tag": "",
+     "patterns": [""],
+     "responses": [""],
+     "context_set": ""
+    },
+    {"tag": "",
+     "patterns": [""],
+     "responses": [""],
+     "context_set": ""
+    },
+    {"tag": "",
+     "patterns": [""],
+     "responses": [""],
+     "context_set": ""
+    },
+    {"tag": "",
+     "patterns": [""],
+     "responses": [""],
+     "context_set": ""
+    },
+    {"tag": "",
+     "patterns": [""],
+     "responses": [""],
      "context_set": ""
     }
 ]

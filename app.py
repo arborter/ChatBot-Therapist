@@ -10,6 +10,7 @@ import json
 import pickle
 
 stemmer = LancasterStemmer()
+seat_count = 50
 
 with open("intents.json") as file:
 	data = json.load(file)
@@ -58,9 +59,18 @@ def get_bot_response():
 		result_index = np.argmax(results)
 		tag = labels[result_index]
 		if results[result_index] > 0.5:
-			if tag == "greeting":
-				response = "This is a response to the greeting"
+			if tag == "help":
+				response = "i will do the best i can. tell me what emøcean you feel right now in one word"
+			else:
+				for tg in data['intents']:
+					if tg['tag'] == tag:
+						responses = tg['responses']
+				response = random.choice(responses)
 		else:
-			response = "Goodbye"
+			response = "I didn't quite get that, please try again."
 		return str(response)
-	return "This is the final return statement" 
+	return "i need more clarity, too."
+
+	
+if __name__ == "__main__":
+	app.run()
