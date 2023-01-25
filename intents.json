@@ -44,8 +44,8 @@
      "responses": [""],
      "context_set": ""
     },
-    {"tag": "",
-     "patterns": [""],
+    {"tag": "help",
+     "patterns": ["i want help", "i need help", "i am sick", "i need someone", "i am so lonely"],
      "responses": [""],
      "context_set": ""
     },
