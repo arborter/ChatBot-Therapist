@@ -1,2 +1,7 @@
 *.txt
 *checkpoint
+*.gitattributes
+*cyberpunk.jpg
+*data.pickle
+*model.tflearn
+*__pycache__
