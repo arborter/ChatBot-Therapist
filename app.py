@@ -53,7 +53,6 @@ def index():
 @app.route('/get')
 def get_bot_response():
 	message = request.args.get('msg')
-	responses = tg['responses']
 	if message:
 		message = message.lower()
 		results = model.predict([bag_of_words(message,words)])[0]
