@@ -53,13 +53,23 @@ def index():
 @app.route('/get')
 def get_bot_response():
 	message = request.args.get('msg')
+	## i need to load data into the responses' empty list
+	responses = ["test one", "test two"]
+ 
 	if message:
 		message = message.lower()
 		results = model.predict([bag_of_words(message,words)])[0]
 		result_index = np.argmax(results)
 		tag = labels[result_index]
 		if results[result_index] > 0.5:
-			
+			if tag == "help":
+				response = "i will do the best i can. tell me what emøcean you feel right now in one word"
+			else:
+				for tg in data['intents']:
+					if tg['tag'] == tag:
+						responses = tg['responses']
+				response = random.choice(responses)
+    
 		else:
 			response = "I didn't quite get that, please try again."
 		return str(response)

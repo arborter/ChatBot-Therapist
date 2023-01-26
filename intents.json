@@ -2,17 +2,18 @@
     {"tag": "greetings",
      "patterns": ["hi", "hey", "how are you?", "is anyone there?", "hello"],
      "responses": ["hello. are you here to speak with me on how you feel? please respond with yes or no."],
-     "context_set": ["insight", "no_to_greece"]
+     "context_set": ""
     },
     {"tag": "insight",
      "patterns": ["yes"],
      "responses": ["Did you know that in Classical Greece there was a way which doctors diagnosed people with any number of ailment? Doctors in that era diagnosed the humors of others, of which there were four. if you would like to learn more, i can help you. would you like to learn more? please answer yes or no, as i am not as intelligent a machine as i would like to be. my creator does not know enough to make me better..."],
-     "context_set": ["yes_to_greece", "no_to_greece"]
+     "context_set": ""
     }, 
+
     {"tag": "no_to_greece",
      "patterns": ["no"],
      "responses": ["this is a two-way street. in order for me to help you, there must be at least a little compromise, that is, a little vulnerability and willingeness to learn. otherwise we cannot change. do you want to learn of the humors?"],
-     "context_set": "yes_to_greece"
+     "context_set": ""
     },
     {"tag": "yes_to_greece",
      "patterns": ["i want to learn more", "yes", "teach", "learn"],
@@ -46,7 +47,7 @@
     },
     {"tag": "help",
      "patterns": ["i want help", "i need help", "i am sick", "i need someone", "i am so lonely"],
-     "responses": [""],
+     "responses": ["this is a test and here is your help"],
      "context_set": ""
     },
     {"tag": "",
