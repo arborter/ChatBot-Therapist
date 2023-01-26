@@ -59,13 +59,7 @@ def get_bot_response():
 		result_index = np.argmax(results)
 		tag = labels[result_index]
 		if results[result_index] > 0.5:
-			if tag == "help":
-				response = "i will do the best i can. tell me what emøcean you feel right now in one word"
-			else:
-				for tg in data['intents']:
-					if tg['tag'] == tag:
-						responses = tg['responses']
-				response = random.choice(responses)
+			
 		else:
 			response = "I didn't quite get that, please try again."
 		return str(response)
