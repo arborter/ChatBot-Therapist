@@ -9,8 +9,6 @@ import json
 import pickle
 from flask import Flask, redirect, render_template, request
 
-app = Flask(__name__)
-
 
 # here we simply LOAD the data of our JSON using json.load()
 with open("intents.json") as file:
@@ -80,12 +78,3 @@ net = tflearn.regression(net)
 model = tflearn.DNN(net)
 model.fit(training, output, n_epoch = 200, batch_size = 8, show_metric = True)
 model.save("model.tflearn")
-
-
-# before deployment via AWS, I want to run this on Flask to test things.
-@app.route("/")
-def hello():
-    return render_template("index.html")
-
-if __name__ == "__main__":
-    app.run()
