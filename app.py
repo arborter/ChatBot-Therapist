@@ -62,10 +62,10 @@ def get_bot_response():
 			for any in data['intents']:
 				if any['tag'] == tag:
 					responses = any['responses']
-				response = random.choice(responses)
+				responses = random.choice(responses)
 		else:
-			response = "I didn't quite get that, please try again."
-		return str(response)
+			responses = "I didn't quite get that, please try again."
+		return str(responses)
 	return "i need more clarity, too."
 
 if __name__ == "__main__":
