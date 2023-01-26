@@ -31,63 +31,23 @@
      "context_set": ""
     },
     {"tag": "sanguine",
-     "patterns": [""],
+     "patterns": ["red"],
      "responses": [""],
      "context_set": ""
     },
     {"tag": "phlegmatic",
-     "patterns": [""],
+     "patterns": ["whit"],
      "responses": [""],
      "context_set": ""
     },
     {"tag": "choleric",
-     "patterns": [""],
+     "patterns": ["yello"],
      "responses": [""],
      "context_set": ""
     },
     {"tag": "help",
      "patterns": ["i want help", "i need help", "i am sick", "i need someone", "i am so lonely"],
      "responses": ["this is a test and here is your help"],
-     "context_set": ""
-    },
-    {"tag": "",
-     "patterns": [""],
-     "responses": [""],
-     "context_set": ""
-    },
-    {"tag": "",
-     "patterns": [""],
-     "responses": [""],
-     "context_set": ""
-    },
-    {"tag": "",
-     "patterns": [""],
-     "responses": [""],
-     "context_set": ""
-    },
-    {"tag": "",
-     "patterns": [""],
-     "responses": [""],
-     "context_set": ""
-    },
-    {"tag": "",
-     "patterns": [""],
-     "responses": [""],
-     "context_set": ""
-    },
-    {"tag": "",
-     "patterns": [""],
-     "responses": [""],
-     "context_set": ""
-    },
-    {"tag": "",
-     "patterns": [""],
-     "responses": [""],
-     "context_set": ""
-    },
-    {"tag": "",
-     "patterns": [""],
-     "responses": [""],
      "context_set": ""
     },
     {"tag": "",
