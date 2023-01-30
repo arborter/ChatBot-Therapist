@@ -65,7 +65,7 @@ def get_bot_response():
                     if any['tag'] == tag:
                         responses = any['responses']
                     responses = any['responses']
-                    response = random.choice(responses)        
+                    ##response = random.choice(responses)        
         else:
             response = "I didn't quite get that, please try again."
         return str(response)
