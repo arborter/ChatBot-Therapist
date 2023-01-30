@@ -63,7 +63,7 @@ def get_bot_response():
                 return str(response)
             else:
                 for any in data['intents']:
-                    if message == data['tag']:
+                    if tag == message:
                         responses = any['responses']
                         response = random.choice(responses)
                         return str(response)
