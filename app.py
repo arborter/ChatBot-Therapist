@@ -60,12 +60,13 @@ def get_bot_response():
         if results[result_index] > 0.5:
             if tag == "help":
                 response = "i will do the best i can. tell me what emøcean you feel right now in one word"
+                return str(response)
             else:
                 for any in data['intents']:
-                    if any['tag'] == tag:
+                    if message == data['tag']:
                         responses = any['responses']
-                    responses = any['responses']
-                    response = random.choice(responses)        
+                        response = random.choice(responses)
+                        return str(response)
         else:
             response = "I didn't quite get that, please try again."
         return str(response)
