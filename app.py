@@ -42,7 +42,6 @@ net = tflearn.regression(net)
 model = tflearn.DNN(net)
 model.load("model.tflearn")
 
-
 app = Flask(__name__)
 
 @app.route('/')
