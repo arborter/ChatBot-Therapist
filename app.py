@@ -57,25 +57,13 @@ def get_bot_response():
         results = model.predict([bag_of_words(message,words)])[0]
         result_index = np.argmax(results)
         tag = labels[result_index]
-        
-        if results[result_index] > 0.5:
-            if tag == "help":
-                response = "i will do the best i can. tell me what emøcean you feel right now in one word"
+        for intent in data["intents"]:
+            if intent["tag"] == tag:
+                response = random.choice(intent["responses"])
                 return str(response)
-            else:
-                for any in data['intents']:
-                    if tag == message:
-                        responses = any['responses']
-                        response = random.choice(responses)
-                        return str(response)
-        else:
-			#response = "I didn't quite get that, please try again."
-            return str("I didn't quite get that, please try again.")
-    return "i need more clarity, too."
-
-
-
+    else:
+        response = "Missing data. I need more input to help you."
+        return str(response)
 
 if __name__ == "__main__":
     app.run()
-

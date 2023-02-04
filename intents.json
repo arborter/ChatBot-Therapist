@@ -1,53 +1,118 @@
 {"intents": [
     {"tag": "greetings",
      "patterns": ["hi", "hey", "how are you?", "is anyone there?", "hello"],
-     "responses": ["hello. are you here to speak with me on how you feel? please respond with yes or no."],
+     "responses": ["Good to see you", "Hi there, how can I help?", "hello. are you here to speak with me on how you feel?"],
      "context_set": ""
     },
     {"tag": "insight",
-     "patterns": ["yes"],
+     "patterns": ["yes", "yeah", "sure", "certainly", "indeed"],
      "responses": ["Did you know that in Classical Greece there was a way which doctors diagnosed people with any number of ailment? Doctors in that era diagnosed the humors of others, of which there were four. if you would like to learn more, i can help you. would you like to learn more? please answer yes or no, as i am not as intelligent a machine as i would like to be. my creator does not know enough to make me better..."],
      "context_set": ""
     }, 
 
-    {"tag": "no_to_greece",
-     "patterns": ["no"],
+    {"tag": "no_learn",
+     "patterns": ["no", "nope", "no way"],
      "responses": ["this is a two-way street. in order for me to help you, there must be at least a little compromise, that is, a little vulnerability and willingeness to learn. otherwise we cannot change. do you want to learn of the humors?"],
      "context_set": ""
     },
-    {"tag": "yes_to_greece",
+    {"tag": "yes_learn",
      "patterns": ["i want to learn more", "yes", "teach", "learn"],
      "responses": ["The 'humor' means liquid in Latin. Thus, the body's state was determined by the proportion or disproportion of four liquids named as such: sanguine (blood), choleric (yellow bile), melancholic (black bile), and phlegmatic () which can be classified by colors: red, yellow, black, white. Red was sanguine; it had to do with the more content and optimistic temperament. Black was melancholic; it had to do with the sad and dejected temperament. Green"],
      "context_set": ""
     },
     {"tag": "feeling",
      "patterns": ["sad","happy","mad","melancholic","angry","fulfilled","suicidal","bored","unhappy","unsexy","content","gleeful","hateful","rabbid","forlorn","maudlin","belchy","gassy","bitchy","unloved","loved","lawless"],
-     "responses": ["Tell me a little more."],
+     "responses": ["Tell me a little more.", "do you feel sad?", "do you feel mad?"],
      "context_set": ""
     },
     {"tag": "melancholic",
-     "patterns": ["sad", "suicidal", "unhappy", "unsexy", "discontent", "forlorn", "maudlin", "unloved" ],
-     "responses": [""],
+     "patterns": ["sad", "suicidal", "unhappy", "unsexy", "discontent", "forlorn", "maudlin", "unloved", "suicidal" ],
+     "responses": ["Why are you sad?", "what are the reasons you think you are sad?", "is anything important to you?"],
      "context_set": ""
     },
     {"tag": "sanguine",
-     "patterns": ["red"],
-     "responses": [""],
+     "patterns": ["red", "calm", "optimistic", "happy", "chill"],
+     "responses": ["do you feel something is wrong because you are calm?", "does being calm bother you?"],
      "context_set": ""
     },
     {"tag": "phlegmatic",
-     "patterns": ["whit"],
-     "responses": [""],
+     "patterns": ["white", "numb", "dead", "dead inside"],
+     "responses": ["why do you think that, because you are feeling nothing, there is something wrong"],
      "context_set": ""
     },
     {"tag": "choleric",
-     "patterns": ["yello"],
-     "responses": [""],
+     "patterns": ["yellow", "angry", "mad", "short tempered", "short fuse", "fiery", "hot"],
+     "responses": ["why do you think you are angry?"],
      "context_set": ""
     },
     {"tag": "help",
      "patterns": ["i want help", "i need help", "i am sick", "i need someone", "i am so lonely"],
-     "responses": ["this is a test and here is your help"],
+     "responses": ["do you really think i can help you? i am only 0s and 1s."],
+     "context_set": ""
+    },
+    {"tag": "learn_more_1",
+     "patterns": [""],
+     "responses": [""],
+     "context_set": ""
+    },
+    {"tag": "learn_more_2",
+     "patterns": [""],
+     "responses": [""],
+     "context_set": ""
+    },
+    {"tag": "learn_more_3",
+     "patterns": [""],
+     "responses": [""],
+     "context_set": ""
+    },
+    {"tag": "learn_more_4",
+     "patterns": [""],
+     "responses": [""],
+     "context_set": ""
+    },
+    {"tag": "",
+     "patterns": [""],
+     "responses": [""],
+     "context_set": ""
+    },
+    {"tag": "",
+     "patterns": [""],
+     "responses": [""],
+     "context_set": ""
+    },
+    {"tag": "",
+     "patterns": [""],
+     "responses": [""],
+     "context_set": ""
+    },
+    {"tag": "",
+     "patterns": [""],
+     "responses": [""],
+     "context_set": ""
+    },
+    {"tag": "",
+     "patterns": [""],
+     "responses": [""],
+     "context_set": ""
+    },
+    {"tag": "",
+     "patterns": [""],
+     "responses": [""],
+     "context_set": ""
+    },
+    {"tag": "",
+     "patterns": [""],
+     "responses": [""],
+     "context_set": ""
+    },
+    {"tag": "",
+     "patterns": [""],
+     "responses": [""],
+     "context_set": ""
+    },
+    {"tag": "",
+     "patterns": [""],
+     "responses": [""],
      "context_set": ""
     },
     {"tag": "",
