@@ -12,3 +12,25 @@ The bot currently works in Flask. I am in the process of transferring its use to
 
 To use the bot, first create the pickle file by loading the main.py code in your terminal. After you have done that, run that app.py file in your terminal. Voila, you have a chatbot that tries to help you through your emotions.
 
+
+Below are the directions to use this bot.
+
+Project structure
+application - flask app (main application)
+
+QuickStart:
+
+First and foremost, you will want to open your terminal and create an environment. 
+
+After you have created the environment, type: 
+"pip install"
+
+After typing "pip install" in your terminal, copy and paste the below one by one. You will repeat this process of "pip install <insert one of the packages below>"  five times:
+
+1. nltk==3.4.5
+2. flask==1.1.1
+3. numpy==1.16.5
+4. tflearn==0.3.2
+5. tensorflow==1.13.2
+
+
