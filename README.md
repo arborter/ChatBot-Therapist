@@ -1,4 +1,4 @@
-ChatBot Therapist
+<bold>ChatBot Therapist</bold>
 
 DISCLAIMER: this bot is not a professional. This bot was purely created for the purpose of understanding natural language processing in a machine, and nothing else. Nothing the bot states should be seen as professional advice.
 
