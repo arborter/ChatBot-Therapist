@@ -1,6 +1,2 @@
 *.txt
-*checkpoint
-*.gitattributes
-*cyberpunk.jpg
-*data.pickle
-*__pycache__
+*DS_Store
