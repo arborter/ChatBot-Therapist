@@ -1,4 +1,4 @@
-<bold>ChatBot Therapist</bold>
+ChatBot Therapist
 
 DISCLAIMER: this bot is not a professional. This bot was purely created for the purpose of understanding natural language processing in a machine, and nothing else. Nothing the bot states should be seen as professional advice.
 
@@ -34,7 +34,4 @@ Now that the dependencies are installed, you are ready to use the bot. Below are
 
 1. Create the pickle file by loading the main.py code in your terminal. You will type in your terminal "python -i main.py" After you have done that, you should see the pickle file in your directory. 
 2. Run that app.py file in your terminal by typing "python -i main.py"
-Voila, now you can run the chatbot from your terminal (: 
-
-
-
+Voila, now you can run the chatbot from your terminal (:
