@@ -30,6 +30,7 @@ After typing "pip install" in your terminal, copy and paste the below one by one
 4. tflearn==0.3.2
 5. tensorflow==1.13.2
 
+
 Now that the dependencies are installed, you are ready to use the bot. Below are the steps to run it: 
 
 1. Create the pickle file by loading the main.py code in your terminal. You will type in your terminal "python -i main.py" After you have done that, you should see the pickle file in your directory. 
